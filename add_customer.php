@@ -36,3 +36,5 @@ $conn = mysqli_connect("localhost", "root", "", "erpdatabase");
         $zapytanie = "INSERT into customers(imie,nazwisko,adres,email) values  ('$imie','$nazwisko','$adres','$email')";
         $sql = mysqli_query($conn, $zapytanie);
 ?>
+</body>
+</html>
