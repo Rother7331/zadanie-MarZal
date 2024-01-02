@@ -26,3 +26,13 @@
             <input type="submit" onclick="" value="DODAJ">
 
     </form>
+
+<?php
+$conn = mysqli_connect("localhost", "root", "", "erpdatabase");
+        $imie = $_POST["imie"];
+        $nazwisko = $_POST["nazwisko"];
+        $adres = $_POST["adres"];
+        $email = $_POST["email"];
+        $zapytanie = "INSERT into customers(imie,nazwisko,adres,email) values  ('$imie','$nazwisko','$adres','$email')";
+        $sql = mysqli_query($conn, $zapytanie);
+?>
