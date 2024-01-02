@@ -21,4 +21,15 @@
 
             <input type="submit" onclick="" value="DODAJ">
 
-    </form>
+    </form>    
+    <?php
+$conn = mysqli_connect("localhost", "root", "", "erpdatabase");
+        $imie = $_POST["imie"];
+        $nazwisko = $_POST["nazwisko"];
+        $ilosc = $_POST["Ilosc"];
+        $Dostepnosc = $_POST["Dostepnosc"];
+        $zapytanie = "INSERT into employees(imie,nazwisko,Ilosc,Dostepnosc) values  ('$imie','$nazwisko','$Ilosc','$Dostepnosc')";
+        $sql = mysqli_query($conn, $zapytanie);
+?>
+</body>
+</html>
