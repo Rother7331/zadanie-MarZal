@@ -1,0 +1,7 @@
+create database ERPDatabase
+
+create table Products(id int primary key not null, nazwa varchar(40), opis varchar(80), cena float(8), dostepnosc int);
+create table Orders(id int primary key not null, zamowienia varchar(40), data datetime, zamowienia int(10), klient int, produkt varchar(40));
+create table Employees(id int primary key not null, imie varchar(40), nazwisko varchar(40), stanowisko varchar(40), wyynagrodzenie int);
+create table EmploteeActions(id_akcja int, id_pracownik int, typ_akcji varchar(40), id_produkt int, id_klient int);
+create TABLE Customers(id int  AUTO_INCREMENT NOT null PRIMARY KEY, imie varchar(20), nazwisko varchar(30), adres varchar(30), email varchar(30));
