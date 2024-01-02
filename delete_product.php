@@ -22,3 +22,13 @@
             <input type="submit" onclick="" value="USUN">
 
     </form>
+$conn = mysqli_connect("localhost", "root", "", "erpdatabase");
+        $imie = $_POST["imie"];
+        $nazwisko = $_POST["nazwisko"];
+        $adres = $_POST["Ilosc"];
+        $email = $_POST["Dostepnosc"];
+        $zapytanie = "DELETE FROM products WHERE nazwa='$nazwa' AND opis='$opis' AND cena='$cena' AND Dostepnosc='$Dostepnosc'";
+        $sql = mysqli_query($conn, $zapytanie);
+?>
+</body>
+</html>
